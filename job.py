@@ -10,6 +10,7 @@ transformed = (
       .withColumn("source", lit("jenkins_demo"))
       .withColumn("value_plus_two", col("value") + 2)
       .withColumn("value_plus_three", col("value") + 3)
+      .withColumn("value_plus_four", col("value") + 4)
 )
 
 transformed.show()
